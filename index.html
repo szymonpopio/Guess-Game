@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="master.css">
+    <title>Guessing Game</title>
+</head>
+
+<body>
+
+    <div class="instructions">
+        <h1>Instructions</h1>
+        <p>
+            Det blir generert ett tall mellom 0 og 100, og målet med spillet er å gjette tallet på minst mulig forsøk.
+            Jo mindre forsøk man gjetter på jo bedre score får man.
+            Hvis man for en bra nok score så får man muligheten til å komme på highscore listen som viser de top 3
+            spillerne.
+            For å restarte spillet så er det bare å trykke på "Play Again" knappen eller trykke på "Esc" knappen på
+            tastaturet.
+        </p>
+    </div>
+
+    <div class="game">
+        <div class="box-1"></div>
+        <div class="box-2"></div>
+        <h1>Guess A Number</h1>
+        <h2>Guess a number between 0 - 100</h2>
+        <input type="text" class="guess" maxlength="3">
+        <span class="message"></span>
+        <p>Total Guesses <span class="guesses">0</span></p>
+        <div class="time">
+            00:00
+        </div>
+        <button class="restart">Play Again</button>
+    </div>
+
+    <div class="register-score">
+        <div class="popup">
+            <form>
+                <div class="stats">
+                    <h2>Stats</h2>
+                    <p>Your total guesses: <span class="final-guesses"></span></p>
+                    <p>Your final time: <span class="final-time"></span></p>
+                </div>
+                <input type="text" placeholder="Enter Name" class="name">
+                <p>You will be placed <span class="ranking"></span></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="score-board">
+        <h1>Score Board</h1>
+        <table>
+            <thead>
+                <tr>
+                    <td>
+                        <h2>Name</h2>
+                    </td>
+                    <td>
+                        <h2>Guesses</h2>
+                    </td>
+                    <td>
+                        <h2>Time</h2>
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <button class="reset">Reset Board</button>
+    </div>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+
+</html>
